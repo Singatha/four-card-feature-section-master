@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Challenge Screenshot](./four-column-screenshot.jpg)
+![Challenge Screenshot](./four-column-screenshot.png)
 
 ### Links
 
