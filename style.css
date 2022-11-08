@@ -19,7 +19,7 @@
     box-sizing: border-box;
 }
 
-html, body, .container {
+html, body, .four-card {
     height: 100%;
 }
 
@@ -30,21 +30,26 @@ body {
     justify-content: center;
 }
 
-h2, h4, p {
+.four-card__title, .four-card__body__title, .four-card__text, .four-card__body__text {
     font-family: var(--ff);
 }
 
-h2, h4 {
+.four-card__title, .four-card__body__title {
     text-align: center;
 }
 
-.lighter {
+.four-card__title--lighter {
     color: var(--very-dark-blue);
     font-weight: unset;
     margin: 0 0 10px;
 }
 
-.normal {
+.four-card__title--bold {
+    font-weight: var(--fw-600);
+    margin: 0 0 10px;
+}
+
+.four-card__text {
     color: var(--very-dark-blue);
     font-size: 13px;
     margin: 0 auto;
@@ -52,24 +57,13 @@ h2, h4 {
     width: 340px;
 }
 
-.header-section {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-.bold {
-    font-weight: var(--fw-600);
-    margin: 0 0 10px;
-}
-
-.cards {
+.four-card__container {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
 }
 
-.card {
+.four-card__body {
     border-radius: 10px;
     background-color: var(--very-light-gray);
     box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.1);
@@ -79,51 +73,51 @@ h2, h4 {
     width: 100%;
 }
 
-.card.cyan {
+.four-card--cyan {
     border-top: 4px solid var(--cyan);
 }
 
-.card.red {
+.four-card--red {
     border-top: 4px solid var(--red);
 }
 
-.card.orange {
+.four-card--orange {
     border-top: 4px solid var(--orange);
 }
 
-.card.blue {
+.four-card--blue {
     border-top: 4px solid var(--blue);
 }
 
-.small {
+.four-card__body__text {
     color: var(--grayish-blue);
     font-size: 12px;
 }
 
-img {
+.four-card__body__img {
     position: relative;
     left: 75%;
 }
 
 @media screen and (min-width: 1000px){
-    .cards {
+    .four-card__container {
         flex-direction: row;
     }
 
-    .card {
+    .four-card__body {
         margin: 0 15px 25px;
     }
 
-    .stacked {
+    .four-card__body--stacked {
         display: flex;
         flex-direction: column;
     }
 
-    .card.cyan, .card.blue {
+    .four-card--cyan, .four-card--blue {
         align-self: center;
     }
 
-    .normal {
+    .four-card__text {
         width: 540px;
     }
 }
